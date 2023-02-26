@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio1_2.MainPage">
+
+    <StackLayout BackgroundColor="Black">
+        <Frame BackgroundColor="Black" Padding="0" CornerRadius="0">
+            <Label Text="Ejercicio1_2" FontAttributes="Bold" HorizontalTextAlignment="Center" TextColor="White" FontSize="25"/>
+        </Frame>
+
+        <Label Text="Nombres" FontAttributes="Bold" HorizontalTextAlignment="Start" TextColor="White" FontSize="21" Padding="2"/>
+        <Entry x:Name="txtnombre" BackgroundColor="DarkGray" TextColor="White" Placeholder="Nombre"/>
+
+        <Label Text="Apellidos" FontAttributes="Bold" HorizontalTextAlignment="Start" TextColor="White" FontSize="21" Padding="2"/>
+        <Entry x:Name="txtapellidos" BackgroundColor="DarkGray" Placeholder="Apellido" TextColor="White"/>
+
+        <Label Text="Edad" HorizontalTextAlignment="Start" FontAttributes="Bold" TextColor="White" FontSize="21" Padding="2"/>
+        <Entry x:Name="txtedad" BackgroundColor="DarkGray" TextColor="White" Placeholder="Edad" Keyboard="Numeric"/>
+
+        <Label Text="Correo Electronico" FontAttributes="Bold" HorizontalTextAlignment="Start" TextColor="White" FontSize="21" Padding="2"/>
+        <Entry x:Name="txtcorreo" BackgroundColor="DarkGray" TextColor="White" Placeholder="Correo" Keyboard="Email"/>
+
+        <Button x:Name="btnenviar" Text="Enviar" FontAttributes="Bold" TextColor="Black" BackgroundColor="White" CornerRadius="10" Margin="0,50,30,0" FontSize="16" Padding="5" WidthRequest="150" HorizontalOptions="Center" Clicked="btnenviar_Clicked"/>
+
+    </StackLayout>
+
+</ContentPage>
